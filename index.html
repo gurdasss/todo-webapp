@@ -7,22 +7,36 @@
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <aside>
-      <img src="#" alt="Todo Logo" class="aside__logo" />
-      <button type="button" class="aside__btn">ICON 01</button>
-      <button type="button" class="aside__btn">ICON 02</button>
-      <button type="button" class="aside__btn">ICON 03</button>
-      <button type="button" class="aside__btn">ICON 04</button>
+      <img src="assets/icons/logo.svg" alt="Todo Logo" class="aside__logo" />
+      <button type="button" class="icon-btn">
+        <img src="assets/icons/tray.svg" alt="Inbox Icon" />
+      </button>
+      <button type="button" class="icon-btn">
+        <img src="assets/icons/calendar.svg" alt="Calendar Icon" />
+      </button>
+      <button type="button" class="icon-btn">
+        <img src="assets/icons/kanban.svg" alt="Kanban Icon" />
+      </button>
+      <button type="button" class="icon-btn">
+        <img src="assets/icons/faders-horizontal.svg" alt="Settings Icon" />
+      </button>
     </aside>
     <main>
       <div class="main__header">
-        <div class="main__header__command-palette">
+        <div class="main__header__cmd-palette">
           <img
-            class="main__header__command-palette__logo"
-            src="#"
+            class="main__header__cmd-palette__logo"
+            src="assets/icons/command.svg"
             alt="Todo Logo"
           />
           <input
@@ -33,6 +47,9 @@
             placeholder="Type a command..."
           />
         </div>
+        <button type="button" class="icon-btn">
+          <img src="assets/icons/sun.svg" alt="Theme Toggle Icon" />
+        </button>
       </div>
       <div class="main__title">INBOX</div>
       <div class="main__main-content">
